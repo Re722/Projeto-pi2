@@ -10,6 +10,7 @@ import { ProdutoService } from '../produto.service';
 export class ProdutosComponent implements OnInit {
 
   produtos: any = {
+    "id":"",
     "name":"",
     "price":"",
     "value":"",
