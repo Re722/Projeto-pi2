@@ -1,0 +1,62 @@
+<mat-grid-list cols="2" rowHeight="100px" >
+    <div class="frt">
+    <mat-grid-tile  cols="1"      
+        [colspan]="1"
+        [rowspan]="7"
+        [style.background]="'gray'">
+        <mat-sidenav-container class="container">
+            <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="0">
+                <mat-nav-list class="nav-list">
+                    <a mat-list-item>
+                        <i class="material-icons">
+                            home
+                        </i>
+                        Menu
+                    </a>
+                    <a mat-list-item routerLink="/produtos">
+                        <i class="material-icons">
+                            storefront
+                        </i>
+                        Produtos
+                    </a>
+                    <a mat-list-item routerLink="/clientes">
+                        <i class="material-icons">
+                            storefront
+                        </i>
+                        Clientes
+                    </a>
+                    <a mat-list-item routerLink="/compras">
+        
+                        <i class="material-icons">
+                            storefront
+                        </i>
+                        Compras
+        
+                        </a>
+                        <a mat-list-item routerLink="/vendas">
+                            <i class="material-icons">
+                                storefront
+                            </i>
+                            Vendas
+                    </a>
+                    <a mat-list-item class="onLogout()" routerLink="/login">
+                        <i class="material-icons">
+                            storefront
+                        </i>
+                        Logout
+                </a>        
+                </mat-nav-list>
+            </mat-sidenav>
+        </mat-sidenav-container>     
+      </mat-grid-tile>
+    </div>  
+    <div class="bt">                 
+  <mat-grid-tile        
+  [colspan]="1"
+  [rowspan]="7"
+  [style.background]="'lightgray'">        
+      Sistema Controll      
+  </mat-grid-tile>
+  </div>
+  
+
