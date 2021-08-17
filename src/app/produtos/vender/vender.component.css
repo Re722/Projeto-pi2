@@ -1,0 +1,16 @@
+.example-container{
+    width: 1%;
+   
+    
+}
+
+.sidenav{
+  background-color: rgb(235, 231, 225);
+  width: 670px;
+}
+.sidenav a{
+  color: rgb(12, 1, 8);
+}
+.sidenav i{
+  padding-right: 12px;
+}

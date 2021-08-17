@@ -5,11 +5,10 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthGuardService implements CanActivate {
+export class AuthService implements CanActivate {
 
 
-  constructor( private router:Router,
-    private authService:AuthGuardService) { }
+  constructor( private router:Router, private authService:AuthService) { }
     canActivate(
       //next: ActivatedRouteSnapshot,
       route:ActivatedRouteSnapshot,
@@ -17,7 +16,7 @@ export class AuthGuardService implements CanActivate {
       
     ) :Observable<boolean> | boolean {
 
-      if(this.authService.usuarioEstaAutentificado()){
+      if(this.authService){
 
         return true;
       }

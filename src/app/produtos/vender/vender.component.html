@@ -1,0 +1,112 @@
+<mat-grid-list cols="2" rowHeight="100px">
+    <mat-grid-tile        
+        [colspan]="1"
+        [rowspan]="7"
+        [style.background]="'gray'">
+        <mat-sidenav-container >
+            <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="0">
+                <mat-nav-list >
+                    <a mat-list-item>
+                        <i class="material-icons">
+                            home
+                        </i>
+                        Menu
+                    </a>
+                    <a mat-list-item routerLink="/produtos">
+                        <i class="material-icons">
+                            storefront
+                        </i>
+                        Produtos
+                    </a>
+                    <a mat-list-item routerLink="/clientes">
+                        <i class="material-icons">
+                            storefront
+                        </i>
+                        Clientes
+                    </a>
+                    <a mat-list-item routerLink="/compras">
+        
+                        <i class="material-icons">
+                            storefront
+                        </i>
+                        Compras
+        
+                        </a>
+                        <a mat-list-item routerLink="/vendas">
+                            <i class="material-icons">
+                                storefront
+                            </i>
+                            Vendas
+                    </a>
+                    <a mat-list-item class="onLogout()" routerLink="/login">
+                        <i class="material-icons">
+                            storefront
+                        </i>
+                        Logout
+                </a>        
+                </mat-nav-list>
+            </mat-sidenav>
+        </mat-sidenav-container>     
+      </mat-grid-tile>  
+      <mat-grid-tile 
+      [colspan]="1"
+        [rowspan]="7"
+        [style.background]="'lightgray'">       
+<mat-card>
+    <mat-card-title class="cor6">Vender Produto</mat-card-title>    
+    <form class=" example-container" >
+         <!--<mat-form-field>
+            <input matInput placeholder="identificador" id="id" [(ngModel)]="produtos.id" name="id"required>
+
+        </mat-form-field>-->
+        <mat-form-field>
+            <input matInput placeholder="Nome"  [(ngModel)]="produtos.name" name="name" id="name" disabled>
+
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Valor"  [(ngModel)]="produtos.price" name="price" id="price" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Margem" [(ngModel)]="produtos.value" name="value" id="value" disabled>
+
+        </mat-form-field>        
+
+        <!--<mat-form-field>
+            <input matInput type="number"placeholder="Quantidade" [(ngModel)]="produtos.total" name="total" id="total" required>
+
+        </mat-form-field> -->
+         <!--QtotalAnterior = quardar em uma variavel o valor de produtos.Qtotal -->       
+        <mat-form-field >
+            <input  matInput type="number"  placeholder="Quantidade vendida" [(ngModel)]="produtos.Qtotal" name="Qtotal" id="Qtotal" required>
+          <!-- -->
+        </mat-form-field>  
+        <mat-form-field>
+            <input matInput placeholder="Preço total" [(ngModel)]="produtos.pricetotal" name="pricetotal" id="pricetotal" >
+
+        </mat-form-field> 
+        <mat-form-field>
+            <input matInput placeholder="Clientes (opcional)" [(ngModel)]="produtos.client" name="client" id="client" >
+
+        </mat-form-field>              
+    </form>
+    
+
+    <div class="button-row">
+        <!--produtos.Qtotal=produtos.Qtotal+QtotalANTERIOR)-->
+        <button mat-fab *ngIf="produtos.total >= produtos.Qtotal"  (click)="venderProduto((produtos.total=produtos.total-produtos.Qtotal),(produtos.pricetotal=produtos.Qtotal*produtos.price))">Incluir</button>
+        <button mat-fab (click)="cancel()" color="warn">Cancelar</button>  
+       
+    </div> 
+    <br>
+
+    <a mat-list-item routerLink="/produtos/listarvendas/">
+     <i class="material-icons">
+         storefront
+     </i>
+     Listar vendas
+    </a>
+    
+    </mat-card>
+        </mat-grid-tile>
+    
+    

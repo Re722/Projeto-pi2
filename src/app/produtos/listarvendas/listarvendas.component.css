@@ -1,0 +1,24 @@
+h4{
+    margin-right: auto;
+    margin-top: 1%;
+    text-align: center;
+    text-size-adjust: 10px;
+    text-decoration: rgb(23, 90, 92);
+    font-size: 30px;
+    background: rgb(235, 234, 233);
+    
+
+}
+table {
+    width: 100%;    
+    background-color: rgb(233, 230, 225);
+  }
+  .edit> i {
+      color: blue;
+  }
+  .delete > i {
+      color: red;
+  }
+  .home > i {
+      color: rgb(4, 18, 31);
+  }

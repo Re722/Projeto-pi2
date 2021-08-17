@@ -25,6 +25,11 @@ import { ComprasComponent } from './compras/compras.component';
 import { ClientesComponent } from './clientes/clientes.component';
 import { LerprodutosComponent } from './lerprodutos/lerprodutos.component';
 import { LervendasComponent } from './lervendas/lervendas.component';
+import { VendaUpdateComponent } from './vendas/venda-update/venda-update.component';
+import { DeleteComponent } from './produtos/delete/delete.component';
+import { ListarvendasComponent } from './produtos/listarvendas/listarvendas.component';
+import { UpdateComponent } from './produtos/update/update.component';
+import { VenderComponent } from './produtos/vender/vender.component';
 
 
 @NgModule({
@@ -37,7 +42,12 @@ import { LervendasComponent } from './lervendas/lervendas.component';
     ComprasComponent,
     ClientesComponent,
     LerprodutosComponent,
-    LervendasComponent
+    LervendasComponent,
+    VendaUpdateComponent,
+    DeleteComponent,
+    ListarvendasComponent,
+    UpdateComponent,
+    VenderComponent
   ],
   imports: [
     BrowserModule,
