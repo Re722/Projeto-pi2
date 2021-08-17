@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-title class="cor6">Cadastrar cliente</mat-card-title>
+    <form class=" example-container > * ">
+        <mat-form-field>
+            <input matInput placeholder="Id" [(ngModel)]="clientes.id" name="Id">
+
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="clientes.name" name="name">
+
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Cpf/Cnpj" [(ngModel)]="clientes.price" name="price">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="M/F" [(ngModel)]="clientes.value" name="value">
+
+        </mat-form-field>
+    </form>
+
+    <div class="button-row">
+        <button mat-fab>Incluir</button>
+        <button mat-fab color="warn">Cancelar</button>  
+    </div>
+</mat-card>
+

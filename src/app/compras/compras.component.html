@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-title class="cor6">Cadastrar compras</mat-card-title>
+    <form class=" example-container > * " (ngSubmit)="onSubmit()">
+        <mat-form-field>
+            <input matInput placeholder="Id" [(ngModel)]="compras.id" name="Id" required>
+
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="nome" [(ngModel)]="compras.name" name="name" required>
+
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Valor" [(ngModel)]="compras.price" name="price" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Margem" [(ngModel)]="compras.value" name="value" required>
+
+        </mat-form-field>
+    </form>
+
+    <div class="button-row">
+        <button mat-fab>Incluir</button>
+        <button mat-fab color="warn">Cancelar</button>  
+    </div>
+</mat-card>
+

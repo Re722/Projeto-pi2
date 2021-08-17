@@ -1,0 +1,26 @@
+.example-container > * {
+    width: 60%;
+    align-content: center;    
+    margin: 2px 2px 11px 55px;
+    background-color: whitesmoke;
+    font-size: 20px;
+    color: rgb(10, 29, 20);
+    
+}
+.button-row {
+    display: flex;
+    align-items: center;
+    margin-inline: 300px;
+    max-zoom: 50px;
+    font-size: 15px;     
+  
+   
+  }
+  .mat-card{
+      background:rgb(233, 230, 225);
+      margin: 15px 15px 15px 15px;
+  }
+  .cor6{
+      margin: 3px 3px 6px 50px;
+  }
+

@@ -20,6 +20,11 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
+import { VendasComponent } from './vendas/vendas.component';
+import { ComprasComponent } from './compras/compras.component';
+import { ClientesComponent } from './clientes/clientes.component';
+import { LerprodutosComponent } from './lerprodutos/lerprodutos.component';
+import { LervendasComponent } from './lervendas/lervendas.component';
 
 
 @NgModule({
@@ -27,7 +32,12 @@ import { MenuComponent } from './menu/menu.component';
     AppComponent,
     ProdutosComponent,
     LoginComponent,
-    MenuComponent
+    MenuComponent,
+    VendasComponent,
+    ComprasComponent,
+    ClientesComponent,
+    LerprodutosComponent,
+    LervendasComponent
   ],
   imports: [
     BrowserModule,

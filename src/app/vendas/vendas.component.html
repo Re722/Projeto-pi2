@@ -1,0 +1,44 @@
+<mat-card>
+    <mat-card-title class="cor6">Cadastrar venda</mat-card-title>
+    <form class=" example-container * " >
+        <!--<mat-form-field>
+            <input matInput placeholder="identificador" id="id" [(ngModel)]="produtos.id" name="id"required>
+
+        </mat-form-field>-->
+        <mat-form-field>
+            <input matInput  placeholder="Quantidade"  [(ngModel)]="vendas.total" name="total" id="total" required>
+
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preço"  [(ngModel)]="vendas.price" name="price" id="price" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Valor total" [(ngModel)]="vendas.value" name="value" id="value" required>
+
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Nome produto" [(ngModel)]="vendas.name" name="name" id="name" required>
+
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Data" [(ngModel)]="vendas.date" name="date" id="date" required>
+
+        </mat-form-field>
+    </form>
+
+    <div class="button-row">
+        <button mat-fab (click)="createVendas()">Incluir</button>
+        <button mat-fab (click)="cancel()" color="warn">Cancelar</button>  
+       
+    </div> 
+
+<br>
+
+<a mat-list-item routerLink="/lervendas">
+ <i class="material-icons">
+     storefront
+ </i>
+ Listar Vendas
+</a>
+
+</mat-card>
